@@ -1,6 +1,6 @@
 ## Introduction
 
-Ce repository contient le code source de mon portfolio personnel, accessible à l'adresse [https://blvcki.github.io/Portfolio/](https://blvcki.github.io/Portfolio/). Ce site présente mes projets, compétences et expériences en tant qu'étudiant en BUT Réseaux & Télécommunications à l'IUT Grand Ouest Normandie.
+Ce repository contient le code source de mon portfolio personnel, accessible à l'adresse [https://blvcki.github.io/Portfolio/](https://blvcki.github.io/Portfolio_v2/). Ce site présente mes projets, compétences et expériences en tant qu'étudiant en BUT Réseaux & Télécommunications à l'IUT Grand Ouest Normandie.
 
 ## Fonctionnalités
 
