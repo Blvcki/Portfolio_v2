@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BUT RT - Année 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation flottante -->
+    <nav class="floating-nav">
+        <div class="nav-item" data-target="accueil">
+            <i class="fas fa-home"></i>
+            <span>Accueil</span>
+        </div>
+        <div class="nav-item" data-target="apropos">
+            <i class="fas fa-user"></i>
+            <span>À propos</span>
+        </div>
+        <div class="nav-item" data-target="projets">
+            <i class="fas fa-project-diagram"></i>
+            <span>Projets</span>
+        </div>
+        <div class="nav-item" data-target="competences">
+            <i class="fas fa-cogs"></i>
+            <span>Compétences</span>
+        </div>
+        <div class="nav-item" data-target="evolution">
+            <i class="fas fa-chart-line"></i>
+            <span>Évolution</span>
+        </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-bg">
+            <div class="geometric-shape shape-1"></div>
+            <div class="geometric-shape shape-2"></div>
+            <div class="geometric-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title-block">
+                <h1 class="hero-name">YOUSSEF SALEM Sultan</h1>
+                <div class="hero-subtitle-wrapper">
+                    <h2 class="hero-subtitle">PORTFOLIO BUT</h2>
+                    <h3 class="hero-description">Réseaux & Télécommunications</h3>
+                    <div class="hero-year">1ÈRE ANNÉE </div>
+                </div>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('projets')">
+                <span>DÉCOUVRIR MES PROJETS</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="about-section">
+        <div class="section-bg">
+            <div class="gold-accent accent-1"></div>
+            <div class="gold-accent accent-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À PROPOS</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Découvrez mon parcours et mes objectifs</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Profil Personnel</h3>
+                    <p>Étudiant passionné par les technologies réseau et télécommunications, je suis actuellement en première année de BUT RT. Mon intérêt pour l'informatique et les réseaux s'est développé au lycée, et je souhaite me spécialiser dans la cybersécurité et l'administration réseau.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>Objectifs Académiques</h3>
+                    <p>Maîtriser les fondamentaux des réseaux et télécommunications, développer des compétences en programmation et en analyse de données, réussir mes projets SAÉ et acquérir une solide base théorique et pratique pour la suite de ma formation.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Projection Professionnelle</h3>
+                    <p>Devenir architecte réseau ou expert en cybersécurité, travailler sur des projets d'envergure nationale ou internationale, contribuer à la sécurisation des infrastructures critiques et évoluer vers des postes de management technique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets SAÉ -->
+    <section id="projets" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PROJETS SAÉ</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Situations d'Apprentissage et d'Évaluation réalisées</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 1.01</h3>
+                        <span class="card-badge">Semestre 1</span>
+                    </div>
+                    <h4>Sensibilisation à l'hygiène info. et à la cybersécurité</h4>
+                    <p>Initiation aux bonnes pratiques et aux enjeux de la sécurité informatique sur les modules du MOOC ANSSI.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                    </div>
+                    <button class="card-button" data-sae="sae101">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 1.02</h3>
+                        <span class="card-badge">Semestre 1</span>
+                    </div>
+                    <h4>S'initier aux réseaux informatiques</h4>
+                    <p>Introduction pratique aux concepts fondamentaux des réseaux informatiques.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                    </div>
+                    <button class="card-button" data-sae="sae102">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 1.03</h3>
+                        <span class="card-badge">Semestre 1</span>
+                    </div>
+                    <h4>Découverte d’un dispositif de transmission</h4>
+                    <p>Initiation à la mesure et à la certification du cuivre et de la fibre optique dans le cadre d’une infrastructure réseau.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                    </div>
+                    <button class="card-button" data-sae="sae103">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 1.04</h3>
+                        <span class="card-badge">Semestre 1</span>
+                    </div>
+                    <h4>Se présenter sur Internet</h4>
+                    <p>Développement d'un site web en HTML/CSS présentant les spécialités culinaires de l'Arabie saoudite, dans le cadre de la SAÉ 1.04.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE3">UE3</span>
+                    </div>
+                    <button class="card-button" data-sae="sae104">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 1.05</h3>
+                        <span class="card-badge">Semestre 1</span>
+                    </div>
+                    <h4>Traitement des données</h4>
+                    <p>Projet d’extraction, de traitement et de présentation de statistiques à partir de l’API Pokémon, de la programmation au rendu Markdown et HTML.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE3">UE3</span>
+                    </div>
+                    <button class="card-button" data-sae="sae105">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 2.01</h3>
+                        <span class="card-badge">Semestre 2</span>
+                    </div>
+                    <h4>Construire un réseau info pour une petite structure</h4>
+                    <p>Projet de découverte et de manipulation sur VirtualBox, Proxmox, réseaux Cisco CCNA, et sécurité des environnements hybrides Windows/Azure.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                    </div>
+                    <button class="card-button" data-sae="sae201">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 2.02</h3>
+                        <span class="card-badge">Semestre 2</span>
+                    </div>
+                    <h4>Mesurer et caractériser un signal ou un système</h4>
+                    <p>Projet de groupe autour du spectre français, du repérage des bandes jusqu’à la visualisation graphique et la compréhension des usages télécom.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                    </div>
+                    <button class="card-button" data-sae="sae202">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 2.03</h3>
+                        <span class="card-badge">Semestre 2</span>
+                    </div>
+                    <h4>Mettre en place une solution info pour l'entreprise</h4>
+                    <p>Développement individuel en JavaScript : personnalisation, accessibilité et expérience utilisateur autour des données météo en temps réel.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE3">UE3</span>
+                    </div>
+                    <button class="card-button" data-sae="sae203">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 2.04</h3>
+                        <span class="card-badge">Semestre 2</span>
+                    </div>
+                    <h4>Projet Intégratif de S2</h4>
+                    <p>Projet de fin d’année qui combine les mathématiques, réseaux, systèmes et télécommunications pour mettre en pratique l’ensemble des compétences acquises.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                        <span class="comp-tag" data-target="UE3">UE3</span>
+                    </div>
+                    <button class="card-button" data-sae="sae204">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 3.01</h3>
+                        <span class="card-badge">Semestre 3</span>
+                    </div>
+                    <h4>Mettre en œuvre un système de transmission</h4>
+                    <p>Étude, choix et installation de solutions techniques pour répondre aux besoins de transmission d'un opérateur ou d'une entreprise, incluant le dimensionnement et la mesure de performance.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                    </div>
+                    <button class="card-button" data-sae="sae301">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAÉ 3.02</h3>
+                        <span class="card-badge">Semestre 3</span>
+                    </div>
+                    <h4>Déployer un réseau multi-sites</h4>
+                    <p>Développement d'une application communicante client/serveur permettant l'échange et la sauvegarde sécurisée de données via différents protocoles et interfaces.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                        <span class="comp-tag" data-target="UE3">UE3</span>
+                    </div>
+                    <button class="card-button" data-sae="sae302">Voir le projet</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>SAE3.Cyber.03</h3>
+                        <span class="card-badge">Semestre 3</span>
+                    </div>
+                    <h4>Concevoir un réseau informatique sécurisé multi-sites</h4>
+                    <p>Conception et mise en œuvre d’un réseau informatique sécurisé multi-sites, incluant la gestion des accès, la protection des données et la fiabilité du réseau.</p>
+                    <div class="card-competences">
+                        <span class="comp-tag" data-target="UE1">UE1</span>
+                        <span class="comp-tag" data-target="UE2">UE2</span>
+                        <span class="comp-tag" data-target="UE4">UE4</span>
+                        <span class="comp-tag" data-target="UE5">UE5</span>
+                    </div>
+                    <button class="card-button" data-sae="sae303">Voir le projet</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="competences-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">COMPÉTENCES</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Compétences développées au cours de l'année</p>
+            </div>
+            <div class="competences-grid">
+                <div class="competence-card" data-competence="UE1">
+                    <div class="comp-header">
+                        <h3>UE1</h3>
+                        <div class="comp-level">
+                            <div class="level-bar" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <h4>Administrer les réseaux et l'Internet</h4>
+                    <p>Maîtrise de l'installation, la configuration et l'administration des équipements réseau et des services Internet.</p>
+                    <div class="comp-saes">
+                        <span>SAÉ mobilisées :</span>
+                        <div class="sae-links">
+                            <span class="sae-link" data-target="sae101">1.01</span>
+                            <span class="sae-link" data-target="sae102">1.02</span>
+                            <span class="sae-link" data-target="sae201">2.01</span>
+                            <span class="sae-link" data-target="sae204">2.04</span>
+                            <span class="sae-link" data-target="sae302">3.02</span>
+                            <span class="sae-link" data-target="sae303">3.Cyber.03</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="competence-card" data-competence="UE2">
+                    <div class="comp-header">
+                        <h3>UE2</h3>
+                        <div class="comp-level">
+                            <div class="level-bar" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <h4>Connecter les entreprises et les usagers</h4>
+                    <p>Mise en œuvre de solutions de connectivité adaptées aux besoins des entreprises et des usagers.</p>
+                    <div class="comp-saes">
+                        <span>SAÉ mobilisées :</span>
+                        <div class="sae-links">
+                            <span class="sae-link" data-target="sae103">1.03</span>
+                            <span class="sae-link" data-target="sae202">2.02</span>
+                            <span class="sae-link" data-target="sae204">2.04</span>
+                            <span class="sae-link" data-target="sae301">3.01</span>
+                            <span class="sae-link" data-target="sae302">3.02</span>
+                            <span class="sae-link" data-target="sae303">3.Cyber.03</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="competence-card" data-competence="UE3">
+                    <div class="comp-header">
+                        <h3>UE3</h3>
+                        <div class="comp-level">
+                            <div class="level-bar" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <h4>Créer des outils et applications</h4>
+                    <p>Développement d'applications et d'outils spécialisés pour les réseaux et télécommunications.</p>
+                    <div class="comp-saes">
+                        <span>SAÉ mobilisées :</span>
+                        <div class="sae-links">
+                            <span class="sae-link" data-target="sae104">1.04</span>
+                            <span class="sae-link" data-target="sae105">1.05</span>
+                            <span class="sae-link" data-target="sae203">2.03</span>
+                            <span class="sae-link" data-target="sae204">2.04</span>
+                            <span class="sae-link" data-target="sae302">3.02</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="competence-card" data-competence="UE3">
+                    <div class="comp-header">
+                        <h3>UE4</h3>
+                        <div class="comp-level">
+                            <div class="level-bar" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <h4>Securiser les réseaux et les systèmes</h4>
+                    <p>Mise en œuvre de solutions de sécurité réseau et système, protection des données, gestion des accès et des risques.</p>
+                    <div class="comp-saes">
+                        <span>SAÉ mobilisées :</span>
+                        <div class="sae-links">
+                            <span class="sae-link" data-target="sae303">3.Cyber.03</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="competence-card" data-competence="UE3">
+                    <div class="comp-header">
+                        <h3>UE5</h3>
+                        <div class="comp-level">
+                            <div class="level-bar" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <h4>Surveiller les réseaux et les systèmes</h4>
+                    <p>Surveillance des réseaux et des systèmes informatiques, identification des anomalies et des menaces, gestion des incidents de sécurité.</p>
+                    <div class="comp-saes">
+                        <span>SAÉ mobilisées :</span>
+                        <div class="sae-links">
+                            <span class="sae-link" data-target="sae303">3.Cyber.03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Évolution -->
+    <section id="evolution" class="evolution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ÉVOLUTION</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Réflexion sur mon parcours et mes perspectives</p>
+            </div>
+            <div class="evolution-content">
+                <div class="evolution-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Points Forts Développés</h3>
+                            <p><strong>Adaptation rapide :</strong> J'ai su m'adapter rapidement à l'environnement universitaire et aux exigences techniques.</p>
+                            <p><strong>Curiosité technique :</strong> Ma passion pour la compréhension des mécanismes techniques m'a permis d'approfondir mes connaissances.</p>
+                            <p><strong>Travail collaboratif :</strong> Les projets de groupe ont renforcé mes compétences en communication et coordination.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Difficultés Rencontrées</h3>
+                            <p><strong>Gestion du temps :</strong> L'équilibre entre théorie et pratique a parfois été délicat à gérer.</p>
+                            <p><strong>Complexité technique :</strong> Certains concepts avancés comme le routage OSPF ont demandé plus de temps d'assimilation.</p>
+                            <p><strong>Programmation :</strong> Le passage de la logique réseau à la programmation n'a pas toujours été évident.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Ajustements Prévus</h3>
+                            <p><strong>Renforcement pratique :</strong> Prévoir plus de temps pour les manipulations et les labs personnels.</p>
+                            <p><strong>Veille technologique :</strong> Mettre en place une veille régulière sur les évolutions du secteur.</p>
+                            <p><strong>Spécialisation progressive :</strong> Commencer à orienter mes projets vers la cybersécurité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-progress">
+                    <h3>Progression des Compétences</h3>
+                    <div class="progress-item">
+                        <span>Configuration réseau</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%" style="width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Développement</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70%" style="width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Analyse de données</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="65%" style="width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Communication technique</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80%" style="width: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <span>Gestion de projet</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75%" style="width: 0;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer avec bouton de téléchargement -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>YOUSSEF SALEM Sultan</h3>
+                    <p>Portfolio BUT Réseaux et Télécommunications</p>
+                    <p>Campus de Ifs - IUT Grand Ouest Normandie</p>
+                </div>
+                <div class="footer-actions">
+                    <button class="download-portfolio" onclick="downloadPortfolio()">
+                        <i class="fas fa-download"></i>
+                        Télécharger le portfolio PDF
+                    </button>
+                    <div class="contact-links">
+                        <span>sultan.youssef-salem@etu.unicaen.fr</span>
+                        <span>LinkedIn: ....</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YOUSSEF SALEM Sultan - Portfolio BUT RT. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour les détails des projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3><i class="fas fa-info-circle"></i> Contexte</h3>
+                    <p id="modalContext"></p>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-tasks"></i> Travail Effectué</h3>
+                    <p id="modalWork"></p>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Problèmes Rencontrés</h3>
+                    <p id="modalProbleme"></p>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-lightbulb"></i> Réflexion Personnelle</h3>
+                    <p id="modalReflection"></p>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-cogs"></i> Compétences Mobilisées</h3>
+                    <div id="modalCompetences"></div>
+                </div>
+                <div class="modal-section">
+                    <h3><i class="fas fa-download"></i> Livrables</h3>
+                    <div id="modalDownloads"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
